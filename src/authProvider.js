@@ -5,7 +5,9 @@ export default (type, params) => {
     if (type === AUTH_LOGIN) {
         console.log( params)
         const { username, password } = params;
-        const request = new Request('http://localhost:3008/authenticate', {
+       // const request = new Request('http://localhost:3008/authenticate', {
+
+        const request = new Request('https://my-json-server.typicode.com/IharOknorp/JsonServer/authenticate', {
             method: 'POST',
             body: JSON.stringify({ username, password }),
             headers: new Headers({ 'Content-Type': 'application/json' }),

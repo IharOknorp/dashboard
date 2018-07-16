@@ -15,7 +15,8 @@ const httpClient = (url, options = {}) => {
     options.headers.set('X-Custom-Header', 'foobar');
     return fetchUtils.fetchJson(url, options);
 }
-const dataProvider = jsonServerProvider('http://localhost:3008', httpClient);
+//const dataProvider = jsonServerProvider('http://localhost:3008', httpClient);
+const dataProvider = jsonServerProvider('https://my-json-server.typicode.com/IharOknorp/JsonServer', httpClient);
 
 const App = () => (
     <Admin dataProvider={dataProvider} authProvider={authProvider} title="Example Admin">
