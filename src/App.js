@@ -20,7 +20,7 @@ const dataProvider = jsonServerProvider('https://my-json-server.typicode.com/Iha
 
 const App = () => (
     <Admin dataProvider={dataProvider} authProvider={authProvider} title="Example Admin">
-        <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} icon={PostIcon}/>
+        <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate}/>
         <Resource name="users" list={UserList} />
     </Admin>
 );

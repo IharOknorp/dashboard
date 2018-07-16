@@ -1,7 +1,7 @@
 import React from 'react';
 import { List, Datagrid, Edit, Create, SimpleForm, DateField, TextField, EditButton, DisabledInput, TextInput, LongTextInput, DateInput, ReferenceField,ReferenceInput, SelectInput } from 'react-admin';
-import BookIcon from '@material-ui/core/svg-icons/action/book';
-export const PostIcon = BookIcon;
+//import BookIcon from '@material-ui/core/svg-icons/action/book';
+//export const PostIcon = BookIcon;
 
 export const PostList = (props) => (
     <List {...props}>
